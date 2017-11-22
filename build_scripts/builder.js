@@ -13,10 +13,6 @@ console.log('Cleaning previous build...');
 try {
   for (var file of fs.readdirSync(outputPath)){
     fs.removeSync(path.join(outputPath, file));
-    // if(fs.lstatSync(path.join(outputPath, file)).isDirectory())
-    //   fs.rmdir(path.join(outputPath, file));
-    // else
-    //   fs.unlinkSync(path.join(outputPath, file));
   }
 }
 catch (err){
