@@ -1,0 +1,151 @@
+/* Sample rules, based on mini.css (https://minicss.org) */
+html {
+  font-size: 16px;
+}
+
+html, * {
+  font-family: -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto", "Droid Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  color: #111;
+  background: #f8f8f8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2em;
+  margin: 0.75rem 0.5rem;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6875rem;
+}
+
+h3 {
+  font-size: 1.4375rem;
+}
+
+h4 {
+  font-size: 1.1875rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.8125rem;
+}
+
+p {
+  margin: 0.5rem;
+}
+
+ol, ul {
+  margin: 0.5rem;
+  padding-left: 1rem;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+hr {
+  box-sizing: content-box;
+  border: 0;
+  overflow: visible;
+  line-height: 1.25em;
+  margin: 0.5rem;
+  border-top: 0.0625rem solid #ddd;
+}
+
+blockquote {
+  display: block;
+  position: relative;
+  font-style: italic;
+  margin: 0.5rem;
+  padding: 0.5rem 0.5rem 1.5rem;
+  border-left: 0.25rem solid #f57c00;
+  border-radius: 0 0.125rem 0.125rem 0;
+}
+
+blockquote:after {
+  position: absolute;
+  font-style: normal;
+  font-size: 0.875rem;
+  color: #505050;
+  left: 0.625rem;
+  bottom: 0;
+  content: "— " attr(cite);
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+}
+
+code {
+  border-radius: 0.125rem;
+  background: #eee;
+  padding: 0.125rem 0.25rem;
+}
+
+pre {
+  overflow: auto;
+  border-radius: 0 0.125rem 0.125rem 0;
+  background: #eee;
+  padding: 0.75rem;
+  margin: 0.5rem;
+  border-left: 0.25rem solid #1565c0;
+}
+
+kbd {
+  border-radius: 0.125rem;
+  background: #111;
+  color: #f8f8f8;
+  padding: 0.125rem 0.25rem;
+}
+
+small, sup, sub {
+  font-size: 0.75em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup, sub {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+a {
+  color: #0277bd;
+  text-decoration: underline;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+a:visited {
+  color: #01579b;
+}
+
+a:hover, a:focus {
+  opacity: 0.75;
+}

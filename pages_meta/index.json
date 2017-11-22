@@ -1,0 +1,13 @@
+{
+  "lang": "en",
+  "title": "Index",
+  "stylesheets": ["./css/style.css"],
+  "scripts": ["./js/main.js"],
+  "charset": "utf-8",
+  "description": "This is a page",
+  "keywords": "page, sample",
+  "author": "None",
+  "favicon": "./images/favicon.png",
+  "viewport": "width=device-width, initial-scale=1",
+  "extra": []
+}
