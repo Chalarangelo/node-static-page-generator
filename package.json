@@ -1,0 +1,36 @@
+{
+  "name": "static-page-generator",
+  "version": "1.0.0",
+  "description": "A basic static page generator for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "build-pages": "node ./build_scripts/builder.js",
+    "start": "concurrently --kill-others \"nodemon -x \\\"npm run build-pages\\\"\" \"live-server ./build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chalarangelo/node-static-page-generator.git"
+  },
+  "keywords": [
+    "static",
+    "page",
+    "generator",
+    "html",
+    "build",
+    "start",
+    "server"
+  ],
+  "author": "Angelos Chalaris (chalarangelo@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Chalarangelo/node-static-page-generator/issues"
+  },
+  "homepage": "https://github.com/Chalarangelo/node-static-page-generator#readme",
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "live-server": "^1.2.0",
+    "markdown-it": "^8.4.0",
+    "nodemon": "^1.12.1"
+  },
+  "devDependencies": {}
+}
