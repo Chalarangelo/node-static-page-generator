@@ -2,7 +2,8 @@ var md = require('markdown-it')();
 
 module.exports = {
   generatePage: function(pageContent, pageMeta = defaultMeta){
-    return`<html lang="${pageMeta.lang || this.defaultMeta.lang}">
+    return`<!DOCTYPE html>
+<html lang="${pageMeta.lang || this.defaultMeta.lang}">
   <head>
     <title>${pageMeta.title || this.defaultMeta.title}</title>
     <meta charset="${pageMeta.charset || this.defaultMeta.charset}">
