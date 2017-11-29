@@ -1,8 +1,7 @@
 # node-static-page-generator
+A basic static page generator for Node.js.
 
 ![Logo](/images/favicon.png)
-
-A basic static page generator for Node.js.
 
 ## Installation & usage
 
