@@ -24,6 +24,7 @@ module.exports = {
           ?pageMeta.stylesheets.map(value => `<link rel="stylesheet" href="${value}">`)
           :''
         :this.defaultMeta.stylesheets.map(value => `<link rel="stylesheet" href="${value}">`)
+      .join('')
     }
     ${
       pageMeta.hasOwnProperty('scripts')
@@ -31,6 +32,7 @@ module.exports = {
           ?pageMeta.scripts.map(value => `<script src="${value}"></script>`)
           :''
         :this.defaultMeta.scripts.map(value => `<script src="${value}"></script>`)
+      .join('')
     }
     <link rel="icon" type="image/png" href="${pageMeta.favicon || this.defaultMeta.favicon}">
   </head>
